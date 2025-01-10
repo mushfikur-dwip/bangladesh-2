@@ -113,10 +113,10 @@ body {
   margin-top: 80px;
 }
 
-.heading .features{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.heading .features {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .title h1 {
   color: #0e0e0e;
@@ -130,8 +130,8 @@ body {
 
 .features-card {
   margin-top: 24px;
-  width: 302px;
-  height: 244px;
+  width: 384px;
+  height: 292px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -143,8 +143,11 @@ body {
   background: rgb(255, 255, 255);
 }
 
-.features-card p {
-  color: #0E0E0ECC;
+.features-card p,
+.vision-card-1 p,
+.vision-card-2 p,
+.vision-card-3 p {
+  color: #0e0e0ecc;
   font-family: Fira Sans;
   font-size: 20px;
   font-weight: 700;
@@ -155,12 +158,83 @@ body {
   margin-bottom: 12px;
 }
 
-.features-card span{
-    color: #0E0E0EB3;
-font-family: Fira Sans;
-font-size: 16px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0%;
-text-align: left;
+.features-card span,
+.vision-card-1 span,
+.vision-card-2 span,
+.vision-card-3 span {
+  color: #0e0e0eb3;
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/* Vision Css */
+
+.heading .title p {
+  color: #0e0e0eb3;
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 24px;
+}
+
+.visions {
+  display: flex;
+  gap: 20px;
+}
+.vision-card-1,.vision-card-2,
+.vision-card-3 {
+  height: 325px;
+  padding: 32px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background: #5490f533;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
+.vision-card-2{
+    background-color: #C6E4D6;
+}
+.vision-card-3{
+    background-color: #F7EBCF;
+}
+
+/* 
+.vision-card p {
+  color: #0e0e0ecc;
+  font-family: Fira Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 25px;
+  margin-bottom: 12px;
+} */
+
+.vision-card-1 button,.vision-card-2 button,.vision-card-3 button {
+  border-radius: 8px;
+  background: #5490F5;
+  color: #ffff;
+  padding: 13px 24px;
+  border: none;
+  margin-top: 28px;
+}
+
+.vision-card-2 button{
+  background: #09A15C;
+}
+.vision-card-3 button{
+  background: #FFC239;
 }
