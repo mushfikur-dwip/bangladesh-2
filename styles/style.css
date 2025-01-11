@@ -339,14 +339,19 @@ table {
   border-collapse: collapse;
 }
 
+.head-row{
+  border-left: 1px solid #0e0e0e26;
+  border: 1px solid rgba(14, 14, 14, 0.15);
+}
+
+.first-head{
+  border-left: 1px solid #0e0e0e26;;
+}
 th {
   text-align: left;
   padding: 24px;
-  border-bottom: 1px solid #e0e0e0;
-  border-left: 1px solid #e0e0e0;
-
+  border-bottom: 1px solid #0e0e0e26;
   box-sizing: border-box;
-  border: 1px solid rgba(14, 14, 14, 0.15);
   background: #c6e4d6;
 }
 
