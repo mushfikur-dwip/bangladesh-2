@@ -8,12 +8,19 @@
   padding: 0;
 }
 
+*:focus {
+  outline: none;
+}
+
 /* Primary Setting */
+
+main {
+  margin: 0 192px;
+}
 
 body {
   font-family: "Fira Sans", serif;
   background-color: #f5f5f5;
-  margin: 0 192px;
 }
 
 /* Nav Menu */
@@ -44,11 +51,16 @@ body {
   padding: 15px 30px;
   text-align: center;
   box-sizing: border-box;
-  border: 1px solid rgb(0, 106, 80);
+  border: 1px solid #006a50;
   border-radius: 8px;
   cursor: pointer;
 }
 
+#sign-btn:hover{
+  background-color: #005f46;
+  color: #fff;
+  transition: ease-in .2s;
+}
 .banner {
   background-color: #c6e4d6;
   height: 480px;
@@ -104,6 +116,10 @@ body {
   cursor: pointer;
 }
 
+.details button:hover{
+  background: #007b5e;
+  transition: ease-in .2s;
+}
 #hero-banner {
   display: flex;
   justify-content: end;
@@ -176,7 +192,7 @@ body {
 
 /* Vision Css */
 
- .title p {
+.title p {
   color: #0e0e0eb3;
   font-family: Fira Sans;
   font-size: 16px;
@@ -237,15 +253,25 @@ body {
   padding: 13px 24px;
   border: none;
   margin-top: 28px;
+  cursor: pointer;
 }
 
+.vision-card-1 button:hover{
+  background: #6397f1;
+}
 .vision-card-2 button {
   background: #09a15c;
+}
+
+.vision-card-2 button:hover {
+  background: #158653;
 }
 .vision-card-3 button {
   background: #ffc239;
 }
-
+.vision-card-3 button:hover {
+  background: #e6b440;
+}
 /* Quote */
 
 .quote {
@@ -256,7 +282,7 @@ body {
   box-sizing: border-box;
   border: 1px solid rgba(14, 14, 14, 0.15);
   background-image: url("../assets/quote-bg.png");
-  background-position: start;
+  background-position: 24px 10px;
   background-repeat: no-repeat;
 }
 .quote .description {
@@ -408,7 +434,6 @@ option {
   /* height: 400px; */
   padding: 48px;
   margin-top: 24px;
-  
 }
 
 .news-card-2 img {
@@ -483,7 +508,7 @@ option {
 .read-more {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #007b5e;
+  background-color: #006A50;
   color: #ffffff;
   text-decoration: none;
   border-radius: 5px;
@@ -494,6 +519,211 @@ option {
   background-color: #005f46;
 }
 
-button{
+button {
   border: none;
+}
+
+/* Donate Section Design */
+
+.donate-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.donate-title h1 {
+  color: rgb(14, 14, 14);
+  font-family: Fira Sans;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.donate-title p {
+  color: rgba(14, 14, 14, 0.7);
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  padding: 0px 120px;
+  margin-top: 24px;
+}
+
+.donation-options {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  align-items: center;
+  gap: 30px;
+  margin-top: 32px;
+}
+
+.donation-options button {
+  padding: 40px;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  color: rgba(14, 14, 14, 0.8);
+  font-family: Fira Sans;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+.donation-options button:hover {
+  background-color: #d9f3e4;
+}
+
+.donation-options button.active {
+  background-color: #d9f3e4;
+  border-color: #007b5e;
+  font-weight: bold;
+}
+
+.other-amount {
+  margin-bottom: 20px;
+}
+
+.other-amount input {
+  width: 1032px;
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(14, 14, 14, 0.15);
+  background: rgb(255, 255, 255);
+  margin: 32px 0px;
+  color: rgba(14, 14, 14, 0.3);
+  font-family: Fira Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.donate-now {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #006a50;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.donate-now:hover {
+  background-color: #005f46;
+}
+
+/* NewsLatter Design  */
+
+.newslatter-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 100px;
+  background-color: #c6e4d6;
+  border-radius: 24px;
+  margin-top: 80px;
+}
+
+.newslatter-sec h1 {
+  color: rgb(14, 14, 14);
+  font-family: Fira Sans;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.newslatter-sec p {
+  color: rgba(14, 14, 14, 0.7);
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  padding: 0px 120px;
+  margin-bottom: 24px;
+  margin-top: 16px;
+}
+
+.newsletter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* margin-bottom: 10px; */
+}
+
+.newsletter input[type="email"] {
+  width: 600px;
+  padding: 18px 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border-radius: 8px 0px 0px 8px;
+  background: rgb(255, 255, 255);
+}
+
+.newsletter button {
+  padding: 15px 34px;
+  border-radius: 0px 8px 8px 0px;
+  background: #006a50;
+  font-size: 16px;
+  cursor: pointer;
+  color: #ffff;
+  font-family: Fira Sans;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  margin-left: -12px;
+  letter-spacing: 0%;
+}
+
+.newsletter button:hover {
+  background-color: #005f46;
+}
+
+p.disclaimer {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Footer Section Design  */
+
+footer {
+  text-align: center;
+  padding: 50px 160px;
+  background-color: #fff;
+  border-top: 1px solid #e0e0e0;
+  margin: 80px 0px 0px 0px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+hr{
+
+  width: 50%;
+  margin: 30px 0px;
+  align-items: center;
+}
+
+footer .social-icons{
+  display: flex;
+  gap: 24px;
 }
