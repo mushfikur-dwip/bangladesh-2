@@ -117,6 +117,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 30px;
 }
 .title h1 {
   color: #0e0e0e;
@@ -186,9 +187,11 @@ body {
 
 .visions {
   display: flex;
-  gap: 20px;
+  gap: 30px;
+  margin-top: 24px;
 }
-.vision-card-1,.vision-card-2,
+.vision-card-1,
+.vision-card-2,
 .vision-card-3 {
   height: 325px;
   padding: 32px;
@@ -203,11 +206,11 @@ body {
   border-radius: 16px;
 }
 
-.vision-card-2{
-    background-color: #C6E4D6;
+.vision-card-2 {
+  background-color: #c6e4d6;
 }
-.vision-card-3{
-    background-color: #F7EBCF;
+.vision-card-3 {
+  background-color: #f7ebcf;
 }
 
 /* 
@@ -223,18 +226,64 @@ body {
   margin-bottom: 12px;
 } */
 
-.vision-card-1 button,.vision-card-2 button,.vision-card-3 button {
+.vision-card-1 button,
+.vision-card-2 button,
+.vision-card-3 button {
   border-radius: 8px;
-  background: #5490F5;
+  background: #5490f5;
   color: #ffff;
   padding: 13px 24px;
   border: none;
   margin-top: 28px;
 }
 
-.vision-card-2 button{
-  background: #09A15C;
+.vision-card-2 button {
+  background: #09a15c;
 }
-.vision-card-3 button{
-  background: #FFC239;
+.vision-card-3 button {
+  background: #ffc239;
+}
+
+/* Quote */
+
+.quote {
+    padding: 38px 24px;
+    margin-top: 38px;
+    background-color: #ffff;
+    border-radius: 16px;
+    box-sizing: border-box;
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    background-image: url("../assets/quote-bg.png");
+    background-position:start;    
+    background-repeat: no-repeat;
+}
+.quote .description {
+  color: #0e0e0ecc;
+  font-family: Fira Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.author {
+  color: #0E0E0ECC;
+  font-family: Fira Sans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 12px;
+}
+
+.quote .position{
+    color: #0E0E0E99;
+font-family: Fira Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0%;
+text-align: left;
 }
